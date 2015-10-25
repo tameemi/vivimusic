@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="web">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible” content=”IE=edge,chrome=1">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <title>vivi</title>
+        <!--CSS-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/stylesheet.css" rel="stylesheet">
+        <script type="text/javascript" src="js/angular.js"></script>
+                <script type="text/javascript" src="js/angular-route.js"></script>
+
+                <script type="text/javascript" src="controller/web.js"></script>
+
+        <!--Fonts-->
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <!--Body-->
+    <body id="page-top" class="index" ng-controller="MainController">
+        <!-- Navigation -->
+<div ng-include src="'partials/topnav.html'"></div>
+        <!-- Header -->
+        <header>
+            <div class="container">
+            </div>
+        </header>
+        <!--Content-->
+        <div id="maincontent">
+         <div ng-view></div>
+         
+        </div>
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="footer-below">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-4 text-left">
+                            &copy; vivi, 2015. All Rights Reserved.
+                        </div>
+                        <div class="col-xs-8 text-right">
+                            <a href="#">About | </a>
+                            <a href="#">Terms | </a>
+                            <a href="#">Contact | </a>
+                            <a href="#">Feedback</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Scripts-->
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="js/classie.js"></script>
+        <script src="js/cbpAnimatedHeader.js"></script>
+        <!-- Navbar Modification JavaScript -->
+        <script src="js/navbar.js"></script>
+
+        <script src="js/search.js"></script>
+    </body>
+</html>
